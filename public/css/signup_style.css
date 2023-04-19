@@ -1,0 +1,112 @@
+* {
+  font-family: "aileron", sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 80px;
+}
+
+.container {
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 600px;
+  height: auto;
+
+  background-color: #edededad;
+  padding: 15px;
+  padding-left: 100px;
+}
+
+p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: smaller;
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+label {
+  font-weight: 300;
+  font-style: normal;
+  font-size: smaller;
+
+  width: 40%;
+  display: inline-block;
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.role{
+  font-weight: 500;
+
+  margin-right: 24px;
+  width: 37%;
+  display: inline-block;
+  background-color: #E5EDCB;
+
+  border-radius: 20px;
+  border: 0px ;
+
+  padding: 10px;
+}
+
+.role:hover {
+  cursor: pointer;
+  background-color: #b1bc8c;
+}
+
+
+.input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #EBEFEE;
+  border: 1px solid rgb(161, 158, 158);
+}
+
+
+#submit {
+  font-weight: 700;
+  font-size: medium;
+
+  padding: 10px;
+  background-color: #ed4c4c;
+  color: white;
+
+  width: 77%;
+  margin: 20px;
+  margin-left: 15px;
+
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #025d2a;
+}
+
+.form a:hover {
+  color: #025d2a;
+}
+
+#return {
+  font-style: italic;
+  text-decoration: underline;
+  color: #ab3d31;
+  font-size: 15px;
+  padding-left: 152px;
+}
+
+
+#return:hover {
+  color: #025d2a;
+}

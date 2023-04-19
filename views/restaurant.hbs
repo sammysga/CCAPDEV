@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="MCO1">
+    <meta name="keyword" content="HTML,CSS">
+    <meta name="author" content="DLSU CCS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="css/restaurant.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <title>Archer's Bowl</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+</head>
+
+<header>
+    <div class="home-button">
+        <a href="/homepage"><img src="images/home.png" class="thumbnail-icon"></a>
+    </div>
+
+    <div class="user-icon">
+        <a href="/user"><img class="thumbnail-icon" src="images/person.png"></a>
+    </div>
+
+    <h1 id="pageTitle">
+        <img src="images/pin.png" height="40px">
+        DLSU
+    </h1>
+
+
+</header>
+
+<body>
+    <input type="search" class="search">
+    <button id="search-button" onclick="filterSelection('search')"> <i class="fa fa-search"></i></button>
+
+
+    <button class="filter" type="button"> <i class="fa fa-filter" aria-hidden="true"></i>
+
+    </button>
+
+    <div class="filter-container">
+        <!-- Control buttons -->
+        <div id="filter-menu">
+            <button class="filter-button" onclick="filterSelection('price')"> Price</button>
+            <button class="filter-button" onclick="filterSelection('rating')"> Rating</button>
+            <button class="filter-button" onclick="filterSelection('time')"> Wait Time</button><br><br>
+        </div>
+
+
+    </div>
+
+    <button class="new-resto">ADD A FOOD SPOT</button>
+    <div class="newresto-container">
+        <!-- Control buttons -->
+        <div class="addnew">
+            <p class="title">ADD A NEW FOOD SPOT</p>
+            <p class="subtitle">NAME</p><br>
+
+            <input type="text" class="newname">
+            <br><br>
+
+            <input type="file" id="stall-img" class="file-upload" />
+            <label for="stall-img">UPLOAD STALL</label><br>
+
+            <input type="file" id="food-img" class="file-upload" />
+            <label for="food-img">UPLOAD FOOD PHOTO</label><br>
+
+            <input type="file" id="menu-img" class="file-upload" />
+            <label for="menu-img">UPLOAD MENU</label><br>
+        </div>
+
+        <div class="review">
+            <p class="title">WRITE A REVIEW</p>
+            <textarea class="text-review" cols="30" rows="10" maxlength="350"></textarea>
+
+            <div class="ratings">
+                <p class="subtitle">RATING</p>
+                <p class="subtitle" class="values">PRICE</p>
+                <p class="subtitle" class="values">WAIT TIME</p>
+
+                <div class="star-rating">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fa fa-star"></label>
+                </div>
+
+                <!--
+                <p>★★★★★</p>
+                <input type="TEXT" class="values" maxlength="1">
+                -->
+
+                <p style="padding-left: 15px; padding-right: -20px;">₱</p>
+                <input type="text" class="values" maxlength="5">
+                <input type="text" class="values" maxlength="2">
+                <p>mins.</p>
+
+            </div>
+            <input type="file" id="file-upload" />
+            <label for="file-upload">UPLOAD A PHOTO</label><BR>
+
+
+            <button class="publish-button" id="publish-button"> PUBLISH</button><br>
+        </div>
+
+
+    </div>
+
+
+
+    <br>
+    <div class="all-restaurants" id="restaurant-container"></div>
+    <script id="restaurant-template" type="text/x-handlebars-template">
+        <a href="/review">
+            <div class="restaurant-container">
+                <div class="wait-time-container">
+                    <span class="wait_time_amount">{{waitTime}}</span>
+                    <span class="minutes">MIN</span>
+                </div>
+    
+                <div class="image-container">
+                    <picture>
+                        <img src="{{imageSource}}" id="resto">
+                    </picture>
+                </div>
+    
+                <div class="caption-container">
+                    <span class="name">{{name}}</span>
+                    <span class="rating">★ {{rating}}</span>
+    
+                    <br>
+                    <span class="price">{{price}}</span>
+                    <span class="cuisine">{{cuisine}}</span>
+                </div>
+            </div>
+        </a>
+    </script>
+<script src="libs/handlebars.min.js"></script>
+
+    <script src="js/restos.js"></script>
+    <script src="js/restaurant.js"></script>
+
+
+</body>
+
+</html>

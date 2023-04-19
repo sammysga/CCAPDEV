@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MCO1">
+  <meta name="keyword" content="HTML,CSS">
+  <meta name="author" content="DLSU CCS">
+
+  <title>Sign Up - Archer's Bowl</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/signup_style.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="signupForm" name="signupForm" class="class" name="signupForm">
+      <p>EMAIL<br>
+        <input type="email" name="email" id="email" class="input" id=""  ></p>
+
+
+      <label>GIVEN NAME<br>
+        <input type="text" name="givenName" id="givenName" class="input" ></label>
+
+      <label>LAST NAME<br>
+        <input type="text" name="lastName" id="lastName" class="input" ></label>
+
+      <p>PASSWORD<br>
+        <input type="password" name="password" id="password" class="input" ></p>
+
+      <p>PROFILE - OTHERS WILL BE ABLE TO VIEW THIS</p>
+
+      <p>USERNAME<br>
+        <input type="text" name="username" id="username" class="input" ></p>
+      </p>
+
+      <p>ROLE: 
+        <form id="roledropdown">
+          <select id="role" name="role">
+            <option value="Student">STUDENT</option>
+            <option value="Staff">STAFF</option>
+          </select>
+        </form>
+        </p>
+
+      <input type="submit" value="Sign Up" id="submit" >
+      <br><a class="create" id = "return" href="/homepage">Return to Login</a>
+
+  </div>
+
+<script src="js/signup.js"></script>
+</body>
+
+</html>

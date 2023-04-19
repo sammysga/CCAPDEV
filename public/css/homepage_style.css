@@ -1,0 +1,70 @@
+svg {
+    left: 0;
+    height: 90%;
+    width: 90%;
+}
+
+svg text {
+    fill: #008037;
+}
+
+path {
+    transition: .2s fill
+}
+
+path:hover {
+    fill: #d9ecd5fa;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "aileron", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgba(47, 50, 42, 0.963);
+    font-size: 50px;
+    margin-bottom: 3px;
+
+
+}
+
+h5 {
+    margin-top: 0px;
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #008037;
+}
+
+header {
+    position: sticky;
+    background-color: white(237, 211, 238);
+    text-align: center;
+    top: 0;
+}
+
+div.thumbnails {
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.thumbnail-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 70%;
+    background-color: papayawhip;
+    vertical-align: baseline;
+}
+
+li {
+    display: inline;
+
+}

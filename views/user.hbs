@@ -1,0 +1,170 @@
+<!-- USER PROFILE PAGE -->
+<html>
+
+<head>
+    <title>Profile - Archer's Bowl</title>
+    <link rel="stylesheet" href="css/user_style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Post</h2>
+        <textarea id="editTextArea" class="modal-textarea"></textarea>
+        <button id="saveEdit" class="modal-btn">Save</button>
+    </div>
+</div>
+
+<!-- Delete Post Modal -->
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Confirm Delete</h2>
+        <p>Are you sure you want to delete this post?</p>
+        <button id="confirmDelete" class="modal-btn">Delete</button>
+    </div>
+</div>
+    <!-- Home, Search, and Profile Navigation Bar -->
+   <header>
+    <div class="home-button">
+        <a href="/homepage"><img src="images/home.png" class="thumbnail-icon"></a>
+    </div>
+
+    <div class="user-icon">
+        <a href="/user"><img class="thumbnail-icon" src="images/person.png"></a>
+    </div>
+
+</header>
+
+    <!-- Profile Card found on the left of page -->
+    <div class="profile_card">
+    <img src="images/person.png" class="user_icon">
+      <a href="">Edit Photo</a>
+    <a href="">Edit Profile</a>
+</div>
+    
+<!-- Recommendations by you bar -->
+<div class="recommendations">
+        <p class = "user_name">Hi, I'm Ate Rica</p>
+        <p class="user_caption">
+            Restaurant Owner • Ate Rica's Bacsilog <br>
+        </p>
+        <img src="images/thumbs_up.png" class="thumbs_up" style="width:7.5%">
+        <div class="recom_text"> 5 recommendations by you</div>
+    </div>
+
+
+    <!-- Post History -->
+    <!-- Post #1 -->
+    <div class="posts">
+        <div class="date_edit_delete">
+            <p class="post_date">Febuary 3, 2019</p> <!-- User/System Input -->
+            <img src="images/edit.png" class="edit">
+            <img src="images/delete.png" class="delete">
+        </div>
+        <div class="post_text"> <!-- User/System Input -->
+            It was because it was still new that there was a long queue of people so it took a while for my
+            order to be prepared. Was it worth the wait? Well its a new variation to the "potato toppings"
+            but the criss-cut fries on newly cooked white rice was not for me. Would recommend however to
+            any french fry fans though.
+        </div>
+        <div class="res_review"> <!-- User/System Input -->
+          <img src="images/potato giant.png" class="res_review_img">
+            Potato Giant </div>
+        </div>
+
+        <!-- Post #2 -->
+        <br> <!-- Line Break Between Posts-->
+        <div class="posts">
+            <div class="date_edit_delete">
+                <p class="post_date">March 27, 2019</p> <!-- User/System Input -->
+                <img src="images/edit.png" class="edit">
+                <img src="images/delete.png" class="delete">
+            </div>
+            <div class="post_text"> <!-- User/System Input -->
+                SO GOOD AND CHEAP. RECOMMENDED so much omg I love it. I go eat there at least once a day because its so
+                cheap. Though I do have concerns on it being too unhealthy but, forgoing this, I would one hundred
+                percent
+                recommend this
+            </div>
+            <div class="res_review"> <!-- User/System Input -->
+              <img src="images/carics.png" class="res_review_img">
+                Carics Rice Tops </div>
+            </div>
+
+            <!-- Post #3 -->
+            <br> <!-- Line Break Between Posts-->
+            <div class="posts">
+                <div class="date_edit_delete">
+                    <p class="post_date">January 8, 2020</p> <!-- User/System Input -->
+                    <img src="images/edit.png" class="edit">
+                    <img src="images/delete.png" class="delete">
+                </div>
+                <div class="post_text"> <!-- User/System Input -->
+                    Lot of options to choose from. Servings are pretty sizable too and all in all good for the prices.
+                    If you
+                    have a little patience to stand in their frequently cramped queue then I highly recommend.
+                </div>
+                <img src="placeholder" class="res_review_img">
+                <div class="res_review"> <!-- User/System Input -->
+                    Big Breakfast </div>
+                </div>
+
+                <!-- Post #4 -->
+                <br> <!-- Line Break Between Posts-->
+                <div class="posts">
+                    <div class="date_edit_delete">
+                        <p class="post_date">December 21, 2021</p> <!-- User/System Input -->
+                        <img src="images/edit.png" class="edit">
+                        <img src="images/delete.png" class="delete">
+                    </div>
+                    <div class="post_text"> <!-- User/System Input -->
+                        Had the opportunity to visit during the pandemic, food still tastes great and the area feels
+                        nostalgic
+                        and definitely reminds you of the pre-quarantine days. Looking forward to eating here regularly
+                        once
+                        campus opens again.
+                    </div>
+                    <div class="res_review"> <!-- User/System Input -->
+                      <img src="images/gnb.png" class="res_review_img">
+                        Ged & Bart </div>
+                    </div>
+
+                    <!-- Post #5 -->
+                    <br> <!-- Line Break Between Posts-->
+                    <div class="posts">
+                        <div class="date_edit_delete">
+                            <p class="post_date">January 13, 2023</p> <!-- User/System Input -->
+                            <img src="images/edit.png" class="edit">
+                            <img src="images/delete.png" class="delete">
+                        </div>
+                        <div class="post_text"> <!-- User/System Input -->
+                            Great place to go to if you want something non-local and affordable. Would definitely
+                            recommend
+                            their Curry-Udon!
+                        </div>
+                        <div class="res_review"> <!-- User/System Input -->
+                          <img src="images/yatai.png" class="res_review_img">
+                            Yatai Curry House </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/user.js"></script>
+</body>
+</html>

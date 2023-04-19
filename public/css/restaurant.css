@@ -1,0 +1,531 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "aileron", sans-serif;
+  color: black;
+
+}
+
+header {
+  position: sticky;
+  padding-top: 75px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 45px;
+
+  z-index: 4;
+  top: 0;
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+}
+
+.home-button {
+  float: left;
+}
+
+.user-icon {
+  float: right;
+}
+
+.thumbnail-icon {
+  width: 45px;
+  height: 45px;
+
+}
+
+h1 {
+  font-family: "aileron", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #008037;
+  font-size: 50px;
+  text-align: center;
+}
+
+body {
+  height: auto;
+  overflow: auto;
+}
+
+.search {
+  padding: 10px;
+  width: 24%;
+  border-radius: 20px;
+  margin-left: 125px;
+  border: 2px solid rgb(210, 205, 205);
+  appearance: none;
+  -webkit-appearance: none;
+  /* Add some padding for the custom search button */
+  padding-right: 40px;
+}
+
+
+
+#search-button {
+  color: white;
+  font-size: 14px;
+
+  border: none;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  margin-left: -50px;
+  
+
+}
+
+#search-button i {
+  color: #008037; /* Update with desired color */
+}
+
+#search-button:hover i {
+  color: #010201; /* Update with desired hover color */
+}
+
+#search-button:active i {
+  color: #010201; /* Update with desired active color */
+}
+
+
+
+
+.filter {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size:17px;
+  margin-left:5px;
+  
+}
+
+
+.filter i {
+  /* Set the initial color of the icon */
+  color:#008037;
+}
+
+.filter:hover i {
+  /* Set the color of the icon on hover */
+  color: rgb(253, 117, 117); /* Update with desired hover color */
+}
+
+.filter:active i {
+  /* Set the color of the icon when button is active/pressed */
+  color:rgb(253, 117, 117); /* Update with desired active color */
+}
+
+.active i {
+  /* Set the color of the icon when button is active/pressed using class "active" */
+  color:rgb(253, 117, 117); /* Update with desired active color */
+}
+
+.filter-menu {
+  padding: 20px;
+  align-items: center;
+
+}
+
+.filter-container {
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 24%;
+  z-index: 2;
+  position: fixed;
+  margin-left: 125px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid rgb(210, 205, 205);
+  padding: 20px;
+  text-align: center
+}
+
+/* Style the buttons */
+.filter-button {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 15px;
+  color: rgb(31, 31, 31);
+  background-color: #ffffff;
+
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+/* Add a light grey background on mouse-over */
+.filter-button:hover {
+  color:#203524bc;
+}
+
+/* Add a dark background to the active button */
+.filter-button.active {
+  background-color: #203524bc;
+  color: white;
+}
+
+
+
+.new-resto {
+  float: right;
+  margin-right: 125px;
+  color: #008037;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 16px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border:none;
+  z-index: 6; /* Set z-index to a value higher than the pop-up container */
+
+}
+
+.new-resto:hover {
+  color: #ca5a55;
+  cursor: pointer;
+}
+
+.new-resto:after {
+  color: rgb(253, 117, 117);
+  text-decoration: underline;
+
+}
+
+.new-resto:hover  {
+  /* Set the color of the icon on hover */
+  color: rgb(253, 117, 117); /* Update with desired hover color */
+}
+
+.new-resto:active  {
+  color:rgb(253, 117, 117); /* Update with desired active color */
+}
+
+
+.newresto-container {
+  z-index:2;
+  display:none;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+
+
+}
+
+p{
+  color:white;
+}
+
+.addnew {
+
+  background-color: #008037;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 20px;
+  padding:30px;
+
+}
+
+.title{
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+  margin:15px;
+}
+
+.subtitle{
+  float:left;
+  color: white;
+  font-weight: 500;
+  font-size: x-small;
+  font-style: italic;
+  margin-left:19px;
+  display:inline-flex;
+  margin-right:60px;
+  margin-bottom:0px;
+}
+
+.newname{
+  height:30px;
+  width: 350px;
+  border-radius: 20px;
+  padding:20px;
+  border:none;
+}
+
+label{
+  margin-top:20px;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+input[type="file"] {
+  opacity: 0;
+  /* make transparent */
+  z-index: -1;
+  /* move under anything else */
+  position: absolute;
+  color:rgb(255, 255, 255);
+
+  /* don't let it take up space */
+}
+
+input[type="file"]:focus+label {
+  outline: 2px solid;
+  color:rgb(33, 18, 18);
+  /* example focus style */
+}
+
+.review {
+  background-color: #008037;
+  text-align: center;
+  width: 420px;
+  height: auto;
+  margin: 20px;
+  border-radius: 20px;
+  padding:30px;
+
+}
+
+.text-review{
+  width: 350px;
+  height: 180px;
+  border-radius: 20px;
+  padding:20px;
+  border:none;
+  text-overflow: unset;
+  margin-bottom:20px;
+}
+
+.ratings{
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom:20px;
+}
+
+.star-rating input{
+  display: none;
+}
+
+.star-rating label{
+  font-size: 20px;
+  color: #e7e0e0;
+  padding: 1px;
+  margin: 2px;
+  text-decoration: none;
+  float: right;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: yellow;
+}
+
+input:checked ~ label{
+  color: yellow;
+}
+
+
+.values{
+  height:20px;
+  width: 65px;
+  border-radius: 20px;
+  padding:10px;
+  border:none;
+  margin : 0 auto;
+}
+
+.publish-button{
+  font-weight: 700;
+font-size: medium;
+
+padding: 10px;
+background-color: #FF5757;
+color: white;
+
+width: 77%;
+margin: 20px;
+margin-left: 15px;
+
+border: none;
+outline: none;
+border-radius: 20px;
+}
+
+.publish-button:hover{
+  cursor: pointer;
+  background-color: rgb(45, 20, 20);
+
+}
+
+
+label{
+  margin-top:20px;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+input[type="file"] {
+  opacity: 0;
+  /* make transparent */
+  z-index: -1;
+  /* move under anything else */
+  position: absolute;
+  color:rgb(255, 255, 255);
+
+  /* don't let it take up space */
+}
+
+input[type="file"]:focus+label {
+  outline: 2px solid;
+  color:rgb(33, 18, 18);
+  /* example focus style */
+}
+
+.title{
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+  margin:15px;
+}
+
+.subtitle{
+  float:left;
+  color: white;
+  font-weight: 500;
+  font-size: x-small;
+  font-style: italic;
+  margin-left:30px;
+  display:inline-flex;
+  margin-right:50px;
+  margin-bottom:0px;
+  justify-content: baseline;
+}
+
+p{
+  color:white;
+}
+
+.all-restaurants {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.restaurant-container {
+  width: 300px;
+  height: 260px;
+  align-items: center;
+  padding-top: 1px;
+  display: inline-block;
+}
+
+.wait-time-container {
+  background-color: rgb(217, 217, 237);
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50px;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, .15);
+
+  padding: 15px;
+  font-size: small;
+  float: right;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.wait_time_amount {
+  font-weight: 500;
+  justify-content: center;
+}
+
+.minutes {
+  font-weight: 700;
+  font-size: smaller;
+
+}
+
+
+.image-container {
+  width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.crop img {
+  max-height: 150px;
+  max-width: 250px;
+}
+
+#resto {
+  border-radius: 25px;
+  max-width: 250px;
+  max-height: 150px;
+  margin: 0 auto;
+  margin-top: -30px;
+
+
+}
+
+.caption-container {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: small;
+
+}
+
+.price {
+  font-weight: 300;
+  font-size: smaller;
+
+
+}
+
+.cuisine {
+  font-weight: 300;
+  font-size: smaller;
+
+
+}
+
+.rating {
+  float: right;
+  font-weight: 300;
+  font-size: smaller;
+
+
+}

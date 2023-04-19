@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="/static/js/login.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MCO1">
+  <meta name="keyword" content="HTML,CSS">
+  <meta name="author" content="DLSU CCS">
+
+  <title>Log In - Archer's Bowl </title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/login_style.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <img src="images/logo.png" alt="logo">
+  <div class="container">
+    <form id="loginForm" name="loginForm" action="/checkAccount" class="form" method="post">
+      <input type="email" id="email" class="input" placeholder="Enter your Email">
+      <input type="password" id="password" class="input" placeholder="Enter your Password">
+      <input type="submit" value="Log In" id="login"/>
+      <p class="signup">Don't have an account yet?
+        <a class="create" href="signup">Create Now!</a>
+      </p>
+    </form>
+  </div>
+</body>
+<script src="js/login.js"></script>
+
+</html>

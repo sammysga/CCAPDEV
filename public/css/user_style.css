@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "aileron", sans-serif;
+    color: black;
+  
+  }
+
+body {
+    height: auto;
+}
+
+
+header {
+    position: sticky;
+    padding-top: 75px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 45px;
+  
+    z-index: 4;
+    top: 0;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+  }
+  
+  .home-button {
+    float: left;
+  }
+  
+  .user-icon {
+    float: right;
+  }
+  
+  .thumbnail-icon {
+    width: 45px;
+    height: 45px;
+  
+  }
+
+p {
+    line-height: 25px;
+}
+
+.profile_card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #EDEDED;
+  position: relative;
+  right: 475px;
+  top: 30px;
+  border-radius: 25px;
+  border-style: none !important;
+  border-right: 1px solid;
+  height: 800px;
+  color: #008037;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.user_icon {
+    position: relative;
+    top: 10px;
+    width: 45%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+
+.profile_card a {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: auto;
+  padding: 0;
+  line-height: .5;
+}
+
+.edit_photo, .edit_profile {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+h1 {
+    position: relative;
+    top: 43px;
+    font-weight: 900;
+    font-style: normal;
+    color: #008037;
+    font-size: 24px;
+}
+
+.user_caption {
+    position: relative;
+    font-family: "aileron", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+.recommendations {
+    max-width: 300px;
+    font-family: "aileron", sans-serif;
+    margin: auto;
+    border-radius: 25px;
+    position: relative;
+    left: -120px;
+    bottom: 800px;
+    padding: 0;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.recom_text {
+    position: relative;
+    left: 35px;
+    bottom: 60px;
+    color: black
+}
+
+.user_caption {
+    position: relative;
+    font-family: "aileron", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    margin-bottom: 0px;
+    top: 20px;
+}
+
+
+.thumbs_up {
+    position: relative;
+    left: 10px;
+    top: 7.5px;
+}
+
+.recom_text {
+    position: relative;
+    left: 35px;
+    bottom: 10px;
+    color: black;
+    font-size: small;
+}
+
+.posts {
+    max-width: calc(70% - 50px);
+    min-height: 100px;
+    margin: auto;
+    background-color: #EDEDED;
+    border-radius: 25px;
+    position: relative;
+    left: 190px;
+    bottom: 770px;
+    padding-bottom: 0;
+}
+
+
+.date_edit_delete {
+    display: flex;
+    flex-direction: row;
+}
+
+.edit {
+    height: 4.2%;
+    width: 4.2%;
+    position: relative;
+    left: 79%;
+    top: 20px;
+    margin-right: 0px;
+}
+
+.delete {
+    height: 3.8%;
+    width: 3.8%;
+    position: relative;
+    left: 79%;
+    top: 20px;
+    margin-left: 0;
+}
+
+.post_date {
+    color: rgba(243, 54, 54, 0.915);
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.post_text {
+    color: black;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    white-space: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+
+
+.res_review {
+    display: flex;
+    align-items: center;
+    color: black;
+    position: relative;
+    left: 25px;
+    font-family: "aileron", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: small;
+    max-width: calc(100% - 320px);
+    height: auto;
+}
+
+.res_review img {
+    margin-right: 10px;
+    height: 70px;
+    width:auto;
+}
+
+.user_name {
+    font-weight: 900;
+    font-style: normal;
+    color: #008037;
+    font-size: 40px;
+    margin: 0;
+}
+
+.user_caption {
+    font-family: "aileron", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.modal-btn {
+    background-color: #008037;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
+}
