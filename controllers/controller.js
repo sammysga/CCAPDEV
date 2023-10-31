@@ -54,6 +54,8 @@ const controller = {
     getRestaurantPage: (req, res) => {
         res.render("restaurant", { layout: false });
     },
+
+    //this is for getting the review page
     getReviewPage: (req, res) => {
         res.render("review", { layout: false });
     },
